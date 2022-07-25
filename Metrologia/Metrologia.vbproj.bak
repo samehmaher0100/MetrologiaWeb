@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{951F9B6D-01DD-4A96-83EB-796B7119ED2F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Metrologia</RootNamespace>
+    <AssemblyName>Metrologia</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Metrologia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Metrologia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4137.9688, Culture=neutral, PublicKeyToken=a4292a325f69b123, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ClTskBck">
+      <HintPath>..\..\..\archivos_metrologia\Librerias\ClTskBck.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="jabber-net, Version=2.1.2.0, Culture=neutral, PublicKeyToken=924c5b18328d6f09, processorArchitecture=MSIL">
+      <HintPath>..\packages\jabber-net.2.1.2.0\lib\net40\jabber-net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.9.1\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="netlib.Dns, Version=1.1.5859.29820, Culture=neutral, PublicKeyToken=924c5b18328d6f09, processorArchitecture=MSIL">
+      <HintPath>..\packages\jabber-net.2.1.2.0\lib\net40\netlib.Dns.dll</HintPath>
+    </Reference>
+    <Reference Include="OC.Core, Version=2.0.0.17347, Culture=neutral, PublicKeyToken=21d5b409dafb75d2, processorArchitecture=MSIL">
+      <HintPath>..\packages\OC.Core.2.0.0\lib\net40\OC.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="OC.Core.Crypto, Version=1.4.13.38223, Culture=neutral, PublicKeyToken=21d5b409dafb75d2, processorArchitecture=MSIL">
+      <HintPath>..\packages\OC.Core.Crypto.1.4.13\lib\net40\OC.Core.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Select.HtmlToPdf, Version=19.2.0.0, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <HintPath>..\packages\Select.HtmlToPdf.19.2.0\lib\net40\Select.HtmlToPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AyudaLocalidad.aspx" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\Default.css" />
+    <Content Include="bootstrap\css\estilos.css" />
+    <Content Include="bootstrap\css\Menu.css" />
+    <Content Include="bootstrap\css\my-login.css" />
+    <Content Include="bootstrap\css\style.css" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.svg" />
+    <Content Include="bootstrap\img\logo.png" />
+    <Content Include="bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\brands.js" />
+    <Content Include="bootstrap\js\fontawesome.js" />
+    <Content Include="bootstrap\js\headroom.min.js" />
+    <Content Include="bootstrap\js\jquery-3.1.1.slim.min.js" />
+    <Content Include="bootstrap\js\jquery-3.4.1.min.js" />
+    <Content Include="bootstrap\js\jquery.min.js" />
+    <Content Include="bootstrap\js\main.js" />
+    <Content Include="bootstrap\js\menu.js" />
+    <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="bootstrap\js\solid.js" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\jquery.autocomplete.css" />
+    <Content Include="Facturas\Frm_Facturas.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Formularios\Frm_Certificados.aspx" />
+    <Content Include="Formularios\Frm_ClienteGuardar.aspx" />
+    <Content Include="Formularios\Frm_email.aspx" />
+    <Content Include="Formularios\Frm_Login.aspx" />
+    <Content Include="Formularios\Frm_Metrologos.aspx" />
+    <Content Include="Formularios\Frm_ProyectoCreacion.aspx" />
+    <Content Include="Formularios\Frm_ProyectosLiberar.aspx" />
+    <Content Include="Formularios\Frm_ProyectosRevisar.aspx" />
+    <Content Include="Formularios\frm_pruebas.aspx" />
+    <Content Include="Formularios\Frm_ReportesDetallados.aspx" />
+    <Content Include="Formularios\Frm_VistaClientes.aspx" />
+    <Content Include="Frm_Indicadores\Frm_IndcadoresBLZ.aspx" />
+    <Content Include="Frm_Indicadores\Frm_Pruebas.aspx" />
+    <Content Include="Frm_ReporteClientes.aspx" />
+    <Content Include="Img\Balanza.png" />
+    <Content Include="Img\dibujar.png" />
+    <Content Include="Img\eliminar.png" />
+    <Content Include="Img\investigacion.png" />
+    <Content Include="Img\loading.gif" />
+    <Content Include="Img\logo_completo.jpg" />
+    <Content Include="Img\Logo_Precitrol.png" />
+    <Content Include="Img\proyecto.png" />
+    <Content Include="Img\save_16.png" />
+    <Content Include="Modulo_CreacionProyecto\Frm_Proyecto.aspx" />
+    <Content Include="PgCorrigePesas.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="pgBuscarCliente.aspx" />
+    <Content Include="pgCertificados.aspx" />
+    <Content Include="pgCliente.aspx" />
+    <Content Include="PgCorregir.aspx" />
+    <Content Include="PgCorrigeCarga.aspx" />
+    <Content Include="PgCorrigeExc.aspx" />
+    <Content Include="PgCorrigeInfo.aspx" />
+    <Content Include="PgCorrigeRepet.aspx" />
+    <Content Include="PgEstadoProyectos.aspx" />
+    <Content Include="pgExplorador.aspx" />
+    <Content Include="PgFtp.aspx" />
+    <Content Include="PgGestionProyectos.aspx" />
+    <Content Include="pgHcal_Cam.aspx" />
+    <Content Include="pgHcal_II.aspx" />
+    <Content Include="pgHcal_IIIyIIII.aspx" />
+    <Content Include="PgHcam_vista.aspx" />
+    <Content Include="PgHIII.aspx" />
+    <Content Include="PgHII_vista.aspx" />
+    <Content Include="PgImpresaHcam.aspx" />
+    <Content Include="PgImpresaHII.aspx" />
+    <Content Include="PgImpresaHIII.aspx" />
+    <Content Include="pgInfoFuera.aspx" />
+    <Content Include="pgIngreso.aspx" />
+    <Content Include="PgIniCorrigePesas.aspx" />
+    <Content Include="PgLibrerias.aspx" />
+    <Content Include="pgMetrologos.aspx" />
+    <Content Include="PgMuestraPdf.aspx" />
+    <Content Include="pgRecDatos.aspx" />
+    <Content Include="pgReenvio.aspx" />
+    <Content Include="pgSelecBal.aspx" />
+    <Content Include="PgSelector_Impresas.aspx" />
+    <Content Include="pgUsuarios.aspx" />
+    <Content Include="pgVerConexion.aspx" />
+    <Content Include="pgVistaClientes.aspx" />
+    <Content Include="Pruebas\Frm_Pruebas.aspx" />
+    <Content Include="Reportes\Frm_ReporteClaseII.aspx" />
+    <Content Include="Reportes\Frm_ReporteClaseIII.aspx" />
+    <Content Include="Reportes\Frm_ReportesClaseCamioenra.aspx" />
+    <Content Include="Reportes\Frm_ReportesVista.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.eot" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.ttf" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.woff" />
+    <Content Include="bootstrap\fonts\fontawesome-webfont.woff2" />
+    <Content Include="bootstrap\fonts\FontAwesome.otf" />
+    <Content Include="Img\Precitrol Logo.ai" />
+    <Content Include="Visor_Documento\Frm_VisorDocumentos.aspx" />
+    <Content Include="Visor_Documento\Frm_VistaDocumentos.aspx" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="WebForm1.aspx" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AyudaLocalidad.aspx.designer.vb">
+      <DependentUpon>AyudaLocalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AyudaLocalidad.aspx.vb">
+      <DependentUpon>AyudaLocalidad.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="clConection.vb" />
+    <Compile Include="clDatos.vb" />
+    <Compile Include="clFunciones.vb" />
+    <Compile Include="Facturas\Frm_Facturas.aspx.designer.vb">
+      <DependentUpon>Frm_Facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\Frm_Facturas.aspx.vb">
+      <DependentUpon>Frm_Facturas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Certificados.aspx.designer.vb">
+      <DependentUpon>Frm_Certificados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Certificados.aspx.vb">
+      <DependentUpon>Frm_Certificados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ClienteGuardar.aspx.designer.vb">
+      <DependentUpon>Frm_ClienteGuardar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ClienteGuardar.aspx.vb">
+      <DependentUpon>Frm_ClienteGuardar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_email.aspx.designer.vb">
+      <DependentUpon>Frm_email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_email.aspx.vb">
+      <DependentUpon>Frm_email.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Login.aspx.designer.vb">
+      <DependentUpon>Frm_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Login.aspx.vb">
+      <DependentUpon>Frm_Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Metrologos.aspx.designer.vb">
+      <DependentUpon>Frm_Metrologos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Metrologos.aspx.vb">
+      <DependentUpon>Frm_Metrologos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ProyectoCreacion.aspx.designer.vb">
+      <DependentUpon>Frm_ProyectoCreacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ProyectoCreacion.aspx.vb">
+      <DependentUpon>Frm_ProyectoCreacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ProyectosLiberar.aspx.designer.vb">
+      <DependentUpon>Frm_ProyectosLiberar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ProyectosLiberar.aspx.vb">
+      <DependentUpon>Frm_ProyectosLiberar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ProyectosRevisar.aspx.designer.vb">
+      <DependentUpon>Frm_ProyectosRevisar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ProyectosRevisar.aspx.vb">
+      <DependentUpon>Frm_ProyectosRevisar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_pruebas.aspx.designer.vb">
+      <DependentUpon>frm_pruebas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_pruebas.aspx.vb">
+      <DependentUpon>frm_pruebas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ReportesDetallados.aspx.designer.vb">
+      <DependentUpon>Frm_ReportesDetallados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ReportesDetallados.aspx.vb">
+      <DependentUpon>Frm_ReportesDetallados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_VistaClientes.aspx.designer.vb">
+      <DependentUpon>Frm_VistaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_VistaClientes.aspx.vb">
+      <DependentUpon>Frm_VistaClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Indicadores\Frm_IndcadoresBLZ.aspx.designer.vb">
+      <DependentUpon>Frm_IndcadoresBLZ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Indicadores\Frm_IndcadoresBLZ.aspx.vb">
+      <DependentUpon>Frm_IndcadoresBLZ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Indicadores\Frm_Pruebas.aspx.designer.vb">
+      <DependentUpon>Frm_Pruebas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Indicadores\Frm_Pruebas.aspx.vb">
+      <DependentUpon>Frm_Pruebas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Frm_ReporteClientes.aspx.designer.vb">
+      <DependentUpon>Frm_ReporteClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ReporteClientes.aspx.vb">
+      <DependentUpon>Frm_ReporteClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Modulo_CreacionProyecto\Frm_Proyecto.aspx.designer.vb">
+      <DependentUpon>Frm_Proyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo_CreacionProyecto\Frm_Proyecto.aspx.vb">
+      <DependentUpon>Frm_Proyecto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgCorrigePesas.aspx.designer.vb">
+      <DependentUpon>PgCorrigePesas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgCorrigePesas.aspx.vb">
+      <DependentUpon>PgCorrigePesas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pgBuscarCliente.aspx.designer.vb">
+      <DependentUpon>pgBuscarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgBuscarCliente.aspx.vb">
+      <DependentUpon>pgBuscarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgCertificados.aspx.designer.vb">
+      <DependentUpon>pgCertificados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgCertificados.aspx.vb">
+      <DependentUpon>pgCertificados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgCliente.aspx.designer.vb">
+      <DependentUpon>pgCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgCliente.aspx.vb">
+      <DependentUpon>pgCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PgCorregir.aspx.designer.vb">
+      <DependentUpon>PgCorregir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgCorregir.aspx.vb">
+      <DependentUpon>PgCorregir.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgCorrigeCarga.aspx.designer.vb">
+      <DependentUpon>PgCorrigeCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgCorrigeCarga.aspx.vb">
+      <DependentUpon>PgCorrigeCarga.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgCorrigeExc.aspx.designer.vb">
+      <DependentUpon>PgCorrigeExc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgCorrigeExc.aspx.vb">
+      <DependentUpon>PgCorrigeExc.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgCorrigeInfo.aspx.designer.vb">
+      <DependentUpon>PgCorrigeInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgCorrigeInfo.aspx.vb">
+      <DependentUpon>PgCorrigeInfo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgCorrigeRepet.aspx.designer.vb">
+      <DependentUpon>PgCorrigeRepet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgCorrigeRepet.aspx.vb">
+      <DependentUpon>PgCorrigeRepet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgEstadoProyectos.aspx.designer.vb">
+      <DependentUpon>PgEstadoProyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgEstadoProyectos.aspx.vb">
+      <DependentUpon>PgEstadoProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgExplorador.aspx.designer.vb">
+      <DependentUpon>pgExplorador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgExplorador.aspx.vb">
+      <DependentUpon>pgExplorador.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgFtp.aspx.designer.vb">
+      <DependentUpon>PgFtp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgFtp.aspx.vb">
+      <DependentUpon>PgFtp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgGestionProyectos.aspx.designer.vb">
+      <DependentUpon>PgGestionProyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgGestionProyectos.aspx.vb">
+      <DependentUpon>PgGestionProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgHcal_Cam.aspx.designer.vb">
+      <DependentUpon>pgHcal_Cam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgHcal_Cam.aspx.vb">
+      <DependentUpon>pgHcal_Cam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgHcal_II.aspx.designer.vb">
+      <DependentUpon>pgHcal_II.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgHcal_II.aspx.vb">
+      <DependentUpon>pgHcal_II.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgHcal_IIIyIIII.aspx.designer.vb">
+      <DependentUpon>pgHcal_IIIyIIII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgHcal_IIIyIIII.aspx.vb">
+      <DependentUpon>pgHcal_IIIyIIII.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgHcam_vista.aspx.designer.vb">
+      <DependentUpon>PgHcam_vista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgHcam_vista.aspx.vb">
+      <DependentUpon>PgHcam_vista.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgHIII.aspx.designer.vb">
+      <DependentUpon>PgHIII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgHIII.aspx.vb">
+      <DependentUpon>PgHIII.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgHII_vista.aspx.designer.vb">
+      <DependentUpon>PgHII_vista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgHII_vista.aspx.vb">
+      <DependentUpon>PgHII_vista.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgImpresaHcam.aspx.designer.vb">
+      <DependentUpon>PgImpresaHcam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgImpresaHcam.aspx.vb">
+      <DependentUpon>PgImpresaHcam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgImpresaHII.aspx.designer.vb">
+      <DependentUpon>PgImpresaHII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgImpresaHII.aspx.vb">
+      <DependentUpon>PgImpresaHII.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PgImpresaHIII.aspx.designer.vb">
+      <DependentUpon>PgImpresaHIII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgImpresaHIII.aspx.vb">
+      <DependentUpon>PgImpresaHIII.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgInfoFuera.aspx.designer.vb">
+      <DependentUpon>pgInfoFuera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgInfoFuera.aspx.vb">
+      <DependentUpon>pgInfoFuera.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgIngreso.aspx.designer.vb">
+      <DependentUpon>pgIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgIngreso.aspx.vb">
+      <DependentUpon>pgIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PgIniCorrigePesas.aspx.designer.vb">
+      <DependentUpon>PgIniCorrigePesas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgIniCorrigePesas.aspx.vb">
+      <DependentUpon>PgIniCorrigePesas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PgLibrerias.aspx.designer.vb">
+      <DependentUpon>PgLibrerias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgLibrerias.aspx.vb">
+      <DependentUpon>PgLibrerias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgMetrologos.aspx.designer.vb">
+      <DependentUpon>pgMetrologos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgMetrologos.aspx.vb">
+      <DependentUpon>pgMetrologos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PgMuestraPdf.aspx.designer.vb">
+      <DependentUpon>PgMuestraPdf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgMuestraPdf.aspx.vb">
+      <DependentUpon>PgMuestraPdf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgRecDatos.aspx.designer.vb">
+      <DependentUpon>pgRecDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgRecDatos.aspx.vb">
+      <DependentUpon>pgRecDatos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgReenvio.aspx.designer.vb">
+      <DependentUpon>pgReenvio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgReenvio.aspx.vb">
+      <DependentUpon>pgReenvio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgSelecBal.aspx.designer.vb">
+      <DependentUpon>pgSelecBal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgSelecBal.aspx.vb">
+      <DependentUpon>pgSelecBal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PgSelector_Impresas.aspx.designer.vb">
+      <DependentUpon>PgSelector_Impresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgSelector_Impresas.aspx.vb">
+      <DependentUpon>PgSelector_Impresas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgUsuarios.aspx.designer.vb">
+      <DependentUpon>pgUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgUsuarios.aspx.vb">
+      <DependentUpon>pgUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pgVerConexion.aspx.designer.vb">
+      <DependentUpon>pgVerConexion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgVerConexion.aspx.vb">
+      <DependentUpon>pgVerConexion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pgVistaClientes.aspx.designer.vb">
+      <DependentUpon>pgVistaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pgVistaClientes.aspx.vb">
+      <DependentUpon>pgVistaClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pruebas\Frm_Pruebas.aspx.designer.vb">
+      <DependentUpon>Frm_Pruebas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pruebas\Frm_Pruebas.aspx.vb">
+      <DependentUpon>Frm_Pruebas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReporteClaseII.aspx.designer.vb">
+      <DependentUpon>Frm_ReporteClaseII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReporteClaseII.aspx.vb">
+      <DependentUpon>Frm_ReporteClaseII.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReporteClaseIII.aspx.designer.vb">
+      <DependentUpon>Frm_ReporteClaseIII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReporteClaseIII.aspx.vb">
+      <DependentUpon>Frm_ReporteClaseIII.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReportesClaseCamioenra.aspx.designer.vb">
+      <DependentUpon>Frm_ReportesClaseCamioenra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReportesClaseCamioenra.aspx.vb">
+      <DependentUpon>Frm_ReportesClaseCamioenra.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReportesVista.aspx.designer.vb">
+      <DependentUpon>Frm_ReportesVista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_ReportesVista.aspx.vb">
+      <DependentUpon>Frm_ReportesVista.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Search_VB.ashx.vb">
+      <DependentUpon>Search_VB.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Documento\Frm_VisorDocumentos.aspx.designer.vb">
+      <DependentUpon>Frm_VisorDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Documento\Frm_VisorDocumentos.aspx.vb">
+      <DependentUpon>Frm_VisorDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Visor_Documento\Frm_VistaDocumentos.aspx.designer.vb">
+      <DependentUpon>Frm_VistaDocumentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_Documento\Frm_VistaDocumentos.aspx.vb">
+      <DependentUpon>Frm_VistaDocumentos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <Content Include="My Project\app.manifest" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\Metrologia.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Search_VB.ashx" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocios_Metrologia\Negocios_Metrologia.vbproj">
+      <Project>{c0181af7-4247-4c2e-b867-fdf49699b9b2}</Project>
+      <Name>Negocios_Metrologia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17714</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:17714/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:17714/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

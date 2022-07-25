@@ -1,0 +1,156 @@
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll.config
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.pdb
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.xml
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\bin\itextsharp.dll
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\bin\itextsharp.xml
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbprojResolveAssemblyReference.cache
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.ResolveComReference.cache
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.Resources.resources
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.GenerateResource.Cache
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CoreCompileInputs.cache
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.xml
+D:\desarrollo\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll.config
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\itextsharp.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\bin\itextsharp.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.ResolveComReference.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.Resources.resources
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.GenerateResource.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CopyComplete
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrología\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.pdb
+C:\Taller Precitrol\Metrologia\Metrologia\obj\Debug\Metrologia.vbprojAssemblyReference.cache
+C:\Taller Precitrol\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.ResolveComReference.cache
+C:\Taller Precitrol\Metrologia\Metrologia\obj\Debug\Metrologia.Resources.resources
+C:\Taller Precitrol\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.GenerateResource.cache
+C:\Taller Precitrol\Metrologia\Metrologia\obj\Debug\Metrologia.dll.licenses
+C:\Taller Precitrol\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CoreCompileInputs.cache
+C:\proyecto\Metrologia\Metrologia\bin\Metrologia.dll.config
+C:\proyecto\Metrologia\Metrologia\bin\Metrologia.dll
+C:\proyecto\Metrologia\Metrologia\bin\Metrologia.pdb
+C:\proyecto\Metrologia\Metrologia\bin\Metrologia.xml
+C:\proyecto\Metrologia\Metrologia\bin\ClTskBck.dll
+C:\proyecto\Metrologia\Metrologia\bin\itextsharp.dll
+C:\proyecto\Metrologia\Metrologia\bin\Negocios_Metrologia.dll
+C:\proyecto\Metrologia\Metrologia\bin\Datos_Metrologia.dll
+C:\proyecto\Metrologia\Metrologia\bin\Negocios_Metrologia.pdb
+C:\proyecto\Metrologia\Metrologia\bin\Negocios_Metrologia.xml
+C:\proyecto\Metrologia\Metrologia\bin\ClTskBck.pdb
+C:\proyecto\Metrologia\Metrologia\bin\ClTskBck.xml
+C:\proyecto\Metrologia\Metrologia\bin\itextsharp.xml
+C:\proyecto\Metrologia\Metrologia\bin\Datos_Metrologia.pdb
+C:\proyecto\Metrologia\Metrologia\bin\Datos_Metrologia.xml
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.vbprojAssemblyReference.cache
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.ResolveComReference.cache
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.Resources.resources
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.GenerateResource.cache
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.dll.licenses
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CoreCompileInputs.cache
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CopyComplete
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.dll
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.xml
+C:\proyecto\Metrologia\Metrologia\obj\Debug\Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll.config
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\itextsharp.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\itextsharp.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbprojAssemblyReference.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.ResolveComReference.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.Resources.resources
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.GenerateResource.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll.licenses
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CopyComplete
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll.config
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\BouncyCastle.Crypto.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.Core.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Select.HtmlToPdf.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\BouncyCastle.Crypto.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.Core.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.Core.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Select.HtmlToPdf.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Select.Html.dep
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbprojAssemblyReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.ResolveComReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.Resources.resources
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.GenerateResource.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll.licenses
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CopyComplete
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll.config
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\BouncyCastle.Crypto.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.Core.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\MathNet.Numerics.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Select.HtmlToPdf.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Negocios_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\BouncyCastle.Crypto.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\ClTskBck.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.Core.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Common.Logging.Core.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\MathNet.Numerics.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Select.HtmlToPdf.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\bin\Select.Html.dep
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbprojAssemblyReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.ResolveComReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.Resources.resources
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.GenerateResource.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll.licenses
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.vbproj.CopyComplete
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Metrologia\obj\Debug\Metrologia.pdb

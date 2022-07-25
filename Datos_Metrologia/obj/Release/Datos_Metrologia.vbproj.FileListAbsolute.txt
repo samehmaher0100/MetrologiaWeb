@@ -1,0 +1,66 @@
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.Resources.resources
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.GenerateResource.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.pdb
+C:\proyecto\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\proyecto\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\proyecto\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\proyecto\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbprojAssemblyReference.cache
+C:\proyecto\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.Resources.resources
+C:\proyecto\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.GenerateResource.cache
+C:\proyecto\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.CoreCompileInputs.cache
+C:\proyecto\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.dll
+C:\proyecto\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.xml
+C:\proyecto\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbprojAssemblyReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.Resources.resources
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.GenerateResource.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.Resources.resources
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.GenerateResource.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbprojAssemblyReference.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.pdb
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\nunit.framework.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\nunit.framework.pdb
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\bin\Release\nunit.framework.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbprojAssemblyReference.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.Resources.resources
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.GenerateResource.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.CoreCompileInputs.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.CopyComplete
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.pdb
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\bin\Release\nunit.framework.dll
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\bin\Release\nunit.framework.pdb
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\bin\Release\nunit.framework.xml
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.AssemblyReference.cache
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.Resources.resources
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.GenerateResource.cache
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.CoreCompileInputs.cache
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.vbproj.CopyComplete
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.dll
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.xml
+C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Release\Datos_Metrologia.pdb

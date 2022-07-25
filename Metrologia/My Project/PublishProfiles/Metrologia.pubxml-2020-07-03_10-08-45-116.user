@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\SISTEMAS PRECITROL\Desktop\MetrologiaWeb</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AyudaLocalidad.aspx">
+      <publishTime>06/03/2019 10:23:19</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>02/08/2019 01:50:10</publishTime>
+    </File>
+    <File Include="bin/ClTskBck.dll">
+      <publishTime>04/09/2018 01:01:44</publishTime>
+    </File>
+    <File Include="bin/ClTskBck.pdb">
+      <publishTime>04/09/2018 01:01:44</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.dll">
+      <publishTime>08/16/2017 06:51:46</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.pdb">
+      <publishTime>08/16/2017 06:51:46</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.dll">
+      <publishTime>08/16/2017 06:51:42</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.pdb">
+      <publishTime>08/16/2017 06:51:42</publishTime>
+    </File>
+    <File Include="bin/Datos_Metrologia.dll">
+      <publishTime>06/29/2020 13:01:41</publishTime>
+    </File>
+    <File Include="bin/Datos_Metrologia.pdb">
+      <publishTime>06/29/2020 13:01:41</publishTime>
+    </File>
+    <File Include="bin/de/PdfSharp.Charting.resources.dll">
+      <publishTime>05/16/2013 17:13:08</publishTime>
+    </File>
+    <File Include="bin/de/PdfSharp.resources.dll">
+      <publishTime>05/16/2013 17:13:08</publishTime>
+    </File>
+    <File Include="bin/HtmlRenderer.dll">
+      <publishTime>10/09/2014 18:41:18</publishTime>
+    </File>
+    <File Include="bin/HtmlRenderer.pdb">
+      <publishTime>10/09/2014 18:41:18</publishTime>
+    </File>
+    <File Include="bin/HtmlRenderer.PdfSharp.dll">
+      <publishTime>05/06/2015 10:39:04</publishTime>
+    </File>
+    <File Include="bin/HtmlRenderer.PdfSharp.pdb">
+      <publishTime>05/06/2015 10:39:04</publishTime>
+    </File>
+    <File Include="bin/IronPdf.Assets.Rendering.Windows.dll">
+      <publishTime>12/18/2019 04:12:42</publishTime>
+    </File>
+    <File Include="bin/IronPdf.dll">
+      <publishTime>12/19/2019 06:46:46</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>06/20/2019 17:39:40</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xmlworker.dll">
+      <publishTime>06/20/2019 17:39:44</publishTime>
+    </File>
+    <File Include="bin/MathNet.Numerics.dll">
+      <publishTime>04/12/2020 16:29:48</publishTime>
+    </File>
+    <File Include="bin/Metrologia.dll">
+      <publishTime>06/29/2020 13:01:48</publishTime>
+    </File>
+    <File Include="bin/Metrologia.pdb">
+      <publishTime>06/29/2020 13:01:48</publishTime>
+    </File>
+    <File Include="bin/Metrologia.xml">
+      <publishTime>06/29/2020 13:01:48</publishTime>
+    </File>
+    <File Include="bin/Negocios_Metrologia.dll">
+      <publishTime>06/29/2020 13:01:44</publishTime>
+    </File>
+    <File Include="bin/Negocios_Metrologia.pdb">
+      <publishTime>06/29/2020 13:01:44</publishTime>
+    </File>
+    <File Include="bin/PdfSharp.Charting.dll">
+      <publishTime>05/16/2013 17:13:08</publishTime>
+    </File>
+    <File Include="bin/PdfSharp.dll">
+      <publishTime>05/16/2013 17:13:08</publishTime>
+    </File>
+    <File Include="bin/Select.Html.dep">
+      <publishTime>10/16/2019 07:53:50</publishTime>
+    </File>
+    <File Include="bin/Select.HtmlToPdf.dll">
+      <publishTime>10/16/2019 09:57:04</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.min.css">
+      <publishTime>05/26/2019 22:00:57</publishTime>
+    </File>
+    <File Include="bootstrap/css/Default.css">
+      <publishTime>05/02/2019 09:25:03</publishTime>
+    </File>
+    <File Include="bootstrap/css/estilos.css">
+      <publishTime>05/21/2019 00:34:24</publishTime>
+    </File>
+    <File Include="bootstrap/css/Menu.css">
+      <publishTime>05/07/2019 10:54:05</publishTime>
+    </File>
+    <File Include="bootstrap/css/my-login.css">
+      <publishTime>05/20/2019 22:42:59</publishTime>
+    </File>
+    <File Include="bootstrap/css/style.css">
+      <publishTime>05/02/2019 11:21:51</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.eot">
+      <publishTime>05/21/2019 00:34:21</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.svg">
+      <publishTime>05/21/2019 00:34:21</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.ttf">
+      <publishTime>05/21/2019 00:34:21</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.woff">
+      <publishTime>05/21/2019 00:34:21</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/fontawesome-webfont.woff2">
+      <publishTime>05/21/2019 00:34:21</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/FontAwesome.otf">
+      <publishTime>05/21/2019 00:34:21</publishTime>
+    </File>
+    <File Include="bootstrap/img/logo.png">
+      <publishTime>05/21/2019 00:34:24</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.bundle.js">
+      <publishTime>05/26/2019 22:00:32</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.bundle.min.js">
+      <publishTime>05/26/2019 22:00:34</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.js">
+      <publishTime>05/26/2019 22:00:34</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.min.js">
+      <publishTime>05/26/2019 22:00:34</publishTime>
+    </File>
+    <File Include="bootstrap/js/brands.js">
+      <publishTime>06/27/2019 11:47:12</publishTime>
+    </File>
+    <File Include="bootstrap/js/fontawesome.js">
+      <publishTime>06/27/2019 11:47:12</publishTime>
+    </File>
+    <File Include="bootstrap/js/headroom.min.js">
+      <publishTime>05/21/2019 00:34:24</publishTime>
+    </File>
+    <File Include="bootstrap/js/jquery-3.1.1.slim.min.js">
+      <publishTime>05/26/2019 21:48:54</publishTime>
+    </File>
+    <File Include="bootstrap/js/jquery-3.4.1.min.js">
+      <publishTime>05/21/2019 00:22:32</publishTime>
+    </File>
+    <File Include="bootstrap/js/jquery.min.js">
+      <publishTime>05/21/2019 00:34:24</publishTime>
+    </File>
+    <File Include="bootstrap/js/main.js">
+      <publishTime>05/02/2019 11:21:32</publishTime>
+    </File>
+    <File Include="bootstrap/js/menu.js">
+      <publishTime>05/21/2019 00:34:24</publishTime>
+    </File>
+    <File Include="bootstrap/js/popper.min.js">
+      <publishTime>06/27/2019 13:17:39</publishTime>
+    </File>
+    <File Include="bootstrap/js/solid.js">
+      <publishTime>06/27/2019 11:47:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/01/2019 21:53:51</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/01/2019 21:53:52</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/01/2019 21:53:52</publishTime>
+    </File>
+    <File Include="css/jquery.autocomplete.css">
+      <publishTime>02/01/2010 15:09:56</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>06/13/2019 13:01:48</publishTime>
+    </File>
+    <File Include="dstCam.xsc">
+      <publishTime>09/08/2017 14:55:39</publishTime>
+    </File>
+    <File Include="dstCam.xss">
+      <publishTime>09/08/2017 14:55:39</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/01/2019 21:53:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/01/2019 21:53:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/01/2019 21:53:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/01/2019 21:53:52</publishTime>
+    </File>
+    <File Include="Formularios/Frm_Certificados.aspx">
+      <publishTime>11/19/2019 14:26:49</publishTime>
+    </File>
+    <File Include="Formularios/Frm_ClienteGuardar.aspx">
+      <publishTime>12/03/2019 16:48:52</publishTime>
+    </File>
+    <File Include="Formularios/Frm_email.aspx">
+      <publishTime>01/23/2020 16:20:47</publishTime>
+    </File>
+    <File Include="Formularios/Frm_Login.aspx">
+      <publishTime>05/31/2019 14:25:48</publishTime>
+    </File>
+    <File Include="Formularios/Frm_Metrologos.aspx">
+      <publishTime>11/19/2019 14:28:17</publishTime>
+    </File>
+    <File Include="Formularios/Frm_ProyectoCreacion.aspx">
+      <publishTime>07/30/2019 09:58:12</publishTime>
+    </File>
+    <File Include="Formularios/Frm_ProyectosLiberar.aspx">
+      <publishTime>08/08/2019 15:53:51</publishTime>
+    </File>
+    <File Include="Formularios/Frm_ProyectosRevisar.aspx">
+      <publishTime>05/14/2020 00:02:40</publishTime>
+    </File>
+    <File Include="Formularios/frm_pruebas.aspx">
+      <publishTime>06/27/2020 22:53:56</publishTime>
+    </File>
+    <File Include="Formularios/Frm_ReportesDetallados.aspx">
+      <publishTime>06/25/2020 09:26:41</publishTime>
+    </File>
+    <File Include="Formularios/Frm_VistaClientes.aspx">
+      <publishTime>07/30/2019 15:56:35</publishTime>
+    </File>
+    <File Include="Frm_ReporteClientes.aspx">
+      <publishTime>05/10/2019 11:45:38</publishTime>
+    </File>
+    <File Include="Img/Balanza.png">
+      <publishTime>05/07/2019 12:45:59</publishTime>
+    </File>
+    <File Include="Img/dibujar.png">
+      <publishTime>05/07/2019 11:53:01</publishTime>
+    </File>
+    <File Include="Img/eliminar.png">
+      <publishTime>05/07/2019 12:38:13</publishTime>
+    </File>
+    <File Include="Img/investigacion.png">
+      <publishTime>06/03/2019 09:26:35</publishTime>
+    </File>
+    <File Include="Img/loading.gif">
+      <publishTime>05/27/2019 23:28:31</publishTime>
+    </File>
+    <File Include="Img/logo_completo.jpg">
+      <publishTime>05/26/2019 00:33:30</publishTime>
+    </File>
+    <File Include="Img/Logo_Precitrol.png">
+      <publishTime>05/20/2019 23:02:38</publishTime>
+    </File>
+    <File Include="Img/Precitrol Logo.ai">
+      <publishTime>05/26/2019 00:41:03</publishTime>
+    </File>
+    <File Include="Img/proyecto.png">
+      <publishTime>06/06/2019 16:48:31</publishTime>
+    </File>
+    <File Include="MasterPage.Master">
+      <publishTime>03/02/2020 14:45:06</publishTime>
+    </File>
+    <File Include="My Project/app.manifest">
+      <publishTime>10/04/2017 00:54:18</publishTime>
+    </File>
+    <File Include="pgBuscarCliente.aspx">
+      <publishTime>07/09/2017 08:29:08</publishTime>
+    </File>
+    <File Include="pgCertificados.aspx">
+      <publishTime>01/20/2020 16:04:00</publishTime>
+    </File>
+    <File Include="pgCliente.aspx">
+      <publishTime>05/20/2019 17:04:34</publishTime>
+    </File>
+    <File Include="PgCorregir.aspx">
+      <publishTime>03/13/2018 10:07:49</publishTime>
+    </File>
+    <File Include="PgCorrigeCarga.aspx">
+      <publishTime>03/08/2018 12:56:12</publishTime>
+    </File>
+    <File Include="PgCorrigeExc.aspx">
+      <publishTime>12/25/2017 20:53:58</publishTime>
+    </File>
+    <File Include="PgCorrigeInfo.aspx">
+      <publishTime>12/25/2017 20:53:29</publishTime>
+    </File>
+    <File Include="PgCorrigePesas.aspx">
+      <publishTime>04/24/2019 13:04:18</publishTime>
+    </File>
+    <File Include="PgCorrigeRepet.aspx">
+      <publishTime>02/21/2019 15:27:47</publishTime>
+    </File>
+    <File Include="PgEstadoProyectos.aspx">
+      <publishTime>03/01/2018 11:10:41</publishTime>
+    </File>
+    <File Include="pgExplorador.aspx">
+      <publishTime>05/31/2019 15:40:58</publishTime>
+    </File>
+    <File Include="PgFtp.aspx">
+      <publishTime>01/05/2018 11:57:09</publishTime>
+    </File>
+    <File Include="pgGeneraInforme.aspx">
+      <publishTime>08/18/2017 13:35:54</publishTime>
+    </File>
+    <File Include="PgGestionProyectos.aspx">
+      <publishTime>07/31/2019 16:52:23</publishTime>
+    </File>
+    <File Include="pgHcal_Cam.aspx">
+      <publishTime>06/24/2020 11:54:47</publishTime>
+    </File>
+    <File Include="pgHcal_II.aspx">
+      <publishTime>04/23/2020 10:02:30</publishTime>
+    </File>
+    <File Include="pgHcal_IIIyIIII.aspx">
+      <publishTime>06/05/2020 12:00:09</publishTime>
+    </File>
+    <File Include="PgHcam_vista.aspx">
+      <publishTime>05/26/2019 22:38:14</publishTime>
+    </File>
+    <File Include="PgHIII.aspx">
+      <publishTime>10/03/2018 17:16:50</publishTime>
+    </File>
+    <File Include="PgHII_vista.aspx">
+      <publishTime>04/04/2018 01:32:58</publishTime>
+    </File>
+    <File Include="pgICC_Cam.aspx">
+      <publishTime>09/06/2017 17:24:48</publishTime>
+    </File>
+    <File Include="PgImpresaHcam.aspx">
+      <publishTime>04/14/2019 23:19:24</publishTime>
+    </File>
+    <File Include="PgImpresaHII.aspx">
+      <publishTime>04/24/2020 19:01:25</publishTime>
+    </File>
+    <File Include="PgImpresaHIII.aspx">
+      <publishTime>05/22/2019 12:43:28</publishTime>
+    </File>
+    <File Include="pgInfoFuera.aspx">
+      <publishTime>10/04/2017 01:23:04</publishTime>
+    </File>
+    <File Include="pgIngreso.aspx">
+      <publishTime>05/31/2019 12:23:28</publishTime>
+    </File>
+    <File Include="PgIniCorrigePesas.aspx">
+      <publishTime>03/13/2018 10:30:18</publishTime>
+    </File>
+    <File Include="PgLibrerias.aspx">
+      <publishTime>04/08/2018 21:40:11</publishTime>
+    </File>
+    <File Include="pgMetrologos.aspx">
+      <publishTime>10/09/2017 16:44:02</publishTime>
+    </File>
+    <File Include="PgMuestraPdf.aspx">
+      <publishTime>01/21/2018 23:21:04</publishTime>
+    </File>
+    <File Include="pgRecDatos.aspx">
+      <publishTime>01/04/2018 15:00:57</publishTime>
+    </File>
+    <File Include="pgReenvio.aspx">
+      <publishTime>01/04/2018 09:58:39</publishTime>
+    </File>
+    <File Include="pgSelecBal.aspx">
+      <publishTime>07/11/2019 15:03:12</publishTime>
+    </File>
+    <File Include="PgSelector_Impresas.aspx">
+      <publishTime>01/29/2018 15:08:49</publishTime>
+    </File>
+    <File Include="pgSelVerEquipo.aspx">
+      <publishTime>07/21/2017 01:39:31</publishTime>
+    </File>
+    <File Include="pgUsuarios.aspx">
+      <publishTime>10/23/2017 15:31:54</publishTime>
+    </File>
+    <File Include="pgVeoPdf.aspx">
+      <publishTime>10/03/2017 18:00:10</publishTime>
+    </File>
+    <File Include="pgVerConexion.aspx">
+      <publishTime>07/09/2017 09:27:41</publishTime>
+    </File>
+    <File Include="pgVerHT.aspx">
+      <publishTime>07/09/2017 09:30:33</publishTime>
+    </File>
+    <File Include="pgVisor_Cam.aspx">
+      <publishTime>09/08/2017 15:31:46</publishTime>
+    </File>
+    <File Include="pgVistaClientes.aspx">
+      <publishTime>05/07/2019 14:50:34</publishTime>
+    </File>
+    <File Include="Reportes/Frm_ReporteClaseIII.aspx">
+      <publishTime>06/05/2020 15:04:27</publishTime>
+    </File>
+    <File Include="Reportes/Frm_ReportesClaseCamioenra.aspx">
+      <publishTime>06/24/2020 11:15:15</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/07/2019 10:24:28</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/07/2019 10:24:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/07/2019 10:24:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/07/2019 10:24:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/07/2019 10:24:29</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/07/2019 10:24:29</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>05/07/2019 10:24:29</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>05/07/2019 10:24:29</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>05/07/2019 10:24:31</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>05/07/2019 10:24:32</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>05/07/2019 10:24:32</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>05/07/2019 10:24:32</publishTime>
+    </File>
+    <File Include="Search_VB.ashx">
+      <publishTime>01/07/2018 21:11:46</publishTime>
+    </File>
+    <File Include="Visor_Cam.aspx">
+      <publishTime>09/08/2017 15:58:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/03/2020 16:02:47</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.eot">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.svg">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.ttf">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.woff">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.woff2">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.eot">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.svg">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.ttf">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.woff">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.woff2">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.eot">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.svg">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.ttf">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.woff">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.woff2">
+      <publishTime>06/27/2019 12:41:28</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

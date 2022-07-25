@@ -1,0 +1,709 @@
+// Código de la clase Evaluacion_previa antes de los cambios en la escritura de las sentencias SQL. Los cambios se realizaran para las tablas: *Ambientales;*Cert_Balxpro;*ExecCam_Cab;*ExecCam_Det;*ExecII_Cab;*ExecII_Det;*PCarga_Cab;
+//*PCarga_Det;*Pesxpro;*RepetII_Cab;*RepetII_Det;*RepetIII_Cab;*RepetIII_Det. En estas tablas se ha activado el Is Identity por lo que hay que eliminar la creación manual de los códigos.
+
+
+package com.alexian.metrologia;
+
+import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.os.Environment;
+import android.provider.Settings.Secure;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+/**
+ * Created by Ing.Iván on 2017-06-20.
+ */
+
+public class Evaluacion_previa extends AppCompatActivity {
+    Spinner sp;
+    private Cursor pry;
+    private BDManager metrologia;
+    private SQLiteDatabase db;
+    private String lugar;
+    private ViewGroup layout;
+    private TextView excentricidad,carga,repetibilidad,metrologo;
+    private EditText recibe,fecha_pr;
+    private Button btFinaliza;
+    private LinearLayout row2, row3;
+    private String idecombpr,clase,cod_metrologo;
+    private RelativeLayout rl;
+    private String ver;
+    private DatePicker dt;
+    private CheckBox chbNoEspecifica;
+    private Ambientales_fin cy1 = new Ambientales_fin();
+    static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.evaluacion_previa);
+        {
+
+            idecombpr = getIntent().getExtras().getString("idecombpr");
+
+            excentricidad=(TextView)findViewById(R.id.lblResExcentricidad);
+            carga=(TextView)findViewById(R.id.lblResCarga);
+            repetibilidad=(TextView)findViewById(R.id.lblResRepetibilidad);
+            metrologo=(TextView)findViewById(R.id.lblMetrologo);
+            recibe=(EditText)findViewById(R.id.txtRecibido);
+            fecha_pr=(EditText)findViewById(R.id.txtFechaProx);
+            btFinaliza=(Button)findViewById(R.id.btFinaliza_Proy);
+            rl=(RelativeLayout)findViewById(R.id.LyEval);
+            dt=(DatePicker)findViewById(R.id.dtproxima);
+            chbNoEspecifica=(CheckBox)findViewById(R.id.chbNoEspecifica);
+            chbNoEspecifica.setChecked(true);
+            //dt.setEnabled(false);
+            dt.setVisibility(View.INVISIBLE);
+
+            chbNoEspecifica.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (chbNoEspecifica.isChecked()) {
+                        dt.setVisibility(View.INVISIBLE);
+                    } else {
+                        dt.setVisibility(View.VISIBLE);
+                    }
+                }
+            });
+
+            metrologia = new BDManager(this, "SistMetPrec.db", null, 1);
+            db = metrologia.getWritableDatabase();
+
+            String fecha;
+            Calendar calendar = Calendar.getInstance();
+            fecha=(simpleDateFormat.format(calendar.getTime()));
+            String actfecha="Update Balxpro set fec_cal='" + fecha + "' where idecombpr='" + idecombpr + "'";
+            db.execSQL(actfecha);
+
+
+            String[] args = new String[]{idecombpr};
+            Cursor c = db.rawQuery(" SELECT ClaBpr,CodMet FROM Balxpro where idecombpr=?", args);
+            if (c.moveToFirst()) {
+                do {
+                    clase = c.getString(0);
+                    cod_metrologo=c.getString(1);
+                } while (c.moveToNext());
+            }
+            c.close();
+
+            rl.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(excentricidad.getWindowToken(), 0);
+                }
+            });
+
+            if (clase.equals("II")){
+                args = new String[]{idecombpr};
+                String Resulta_ex="";
+                c = db.rawQuery(" Select SatEii_c from ExecII_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        Resulta_ex=c.getString(0);
+                    } while (c.moveToNext());
+                }
+                c.close();
+                excentricidad.setText(Resulta_ex);
+
+                args = new String[]{idecombpr};
+                String Resulta_cr="SATISFACTORIA";
+                c = db.rawQuery(" Select SatPca_C from PCarga_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        String res=c.getString(0);
+                        if (res.equals("NO SATISFACTORIA")){
+                            Resulta_cr="NO SATISFACTORIA";
+                        }
+                    } while (c.moveToNext());
+                }
+                c.close();
+                carga.setText(Resulta_cr);
+
+                args = new String[]{idecombpr};
+                String Resulta_pr="";
+                c = db.rawQuery(" Select SatRii from RepetII_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        Resulta_pr=c.getString(0);
+                    } while (c.moveToNext());
+                }
+                c.close();
+                repetibilidad.setText(Resulta_pr);
+
+            }else if (clase.equals("Camionera")){
+
+                args = new String[]{idecombpr};
+                String Resulta_ex="";
+                c = db.rawQuery(" Select SatCam_c from ExecCam_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        Resulta_ex=c.getString(0);
+                    } while (c.moveToNext());
+                }
+                c.close();
+                excentricidad.setText(Resulta_ex);
+
+                args = new String[]{idecombpr};
+                String Resulta_cr="SATISFACTORIA";
+                c = db.rawQuery(" Select distinct(SatPca_C) from PCarga_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        String res=c.getString(0);
+                        if (res.equals("NO SATISFACTORIA")) {
+                            Resulta_cr = "NO SATISFACTORIA";
+                        }
+                    } while (c.moveToNext());
+                }
+                c.close();
+                carga.setText(Resulta_cr);
+
+                args = new String[]{idecombpr};
+                String Resula_pr="";
+                c = db.rawQuery(" Select SatRiii from RepetIII_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        Resula_pr=c.getString(0);
+                    } while (c.moveToNext());
+                }
+                c.close();
+                repetibilidad.setText(Resula_pr);
+
+            }else if ((clase.equals("III"))||(clase.equals("IIII"))){
+                args = new String[]{idecombpr};
+                String Resulta_ex="";
+                c = db.rawQuery(" Select SatEii_c from ExecII_Cab where idecombpr=? and PrbEii_c=1", args);
+                if (c.moveToFirst()) {
+                    do {
+                        Resulta_ex=c.getString(0);
+                    } while (c.moveToNext());
+                }
+                c.close();
+                excentricidad.setText(Resulta_ex);
+
+                args = new String[]{idecombpr};
+                String Resulta_cr="SATISFACTORIA";
+                c = db.rawQuery(" Select SatPca_C from PCarga_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        String res=c.getString(0);
+                        if (res.equals("NO SATISFACTORIA")) {
+                            Resulta_cr = "NO SATISFACTORIA";
+                        }
+                    } while (c.moveToNext());
+                }
+                c.close();
+                carga.setText(Resulta_cr);
+
+                args = new String[]{idecombpr};
+                String Resulta_rp="";
+                c = db.rawQuery("Select SatRiii from RepetIII_Cab where idecombpr=?", args);
+                if (c.moveToFirst()) {
+                    do {
+                        Resulta_rp=c.getString(0);
+                    } while (c.moveToNext());
+                }
+                c.close();
+                repetibilidad.setText(Resulta_rp);
+            }
+
+            args = new String[]{cod_metrologo};
+            c = db.rawQuery(" Select NomMet from Metrologos where CodMet=?", args);
+            if (c.moveToFirst()) {
+                do {
+                    metrologo.setText(c.getString(0));
+                } while (c.moveToNext());
+            }
+            c.close();
+
+            btFinaliza.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String codipro="";
+                    String rec=recibe.getText().toString();
+                    if (rec.equals("")){
+                        //rec="n/a";
+                        Toast.makeText(getApplicationContext(),"Debe especificar " +
+                                "la persona que recibe el trabajo.",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                    String fecha_prox="";
+                    if (chbNoEspecifica.isChecked()){
+                        fecha_prox="n/a";
+                    }else{
+                        int dia=dt.getDayOfMonth();
+                        int mes=dt.getMonth();
+                        int anio=dt.getYear();
+                        fecha_prox=String.valueOf(anio) + "/" + String.valueOf(mes) + "/" + String.valueOf(dia);
+                    }
+                    //Toast.makeText(getApplicationContext(),fecha_prox,Toast.LENGTH_SHORT).show();
+                    String Str="update Balxpro set RecPorCliBpr='" + rec + "', " +
+                            "EstBpr='I',est_esc='P',fec_proxBpr='" + fecha_prox + "' where IdeComBpr = '" + idecombpr + "'";
+                    //Toast.makeText(getApplicationContext(),Str,Toast.LENGTH_SHORT).show();
+                    db.execSQL(Str);
+                    String[] args = new String[]{idecombpr};
+                    //String Resulta_cr="SATISFACTORIA";
+                    Cursor c = db.rawQuery("Select CodPro from Balxpro where idecombpr=?", args);
+                    if (c.moveToFirst()) {
+                        do {
+                            codipro=c.getString(0);
+                        } while (c.moveToNext());
+                    }
+                    c.close();
+
+                    Integer cuenta=0;
+                    args = new String[]{codipro,"A"};
+                    c = db.rawQuery(" Select count(IdeBpr) from Balxpro where CodPro=? and EstBpr=?", args);
+                    if (c.moveToFirst()) {
+                        do {
+                            cuenta = c.getInt(0);
+                        } while (c.moveToNext());
+                    }
+                    c.close();
+
+                    if (cuenta == 0){
+                        Str="update Proyectos set EstPro='I' where CodPro = "  + codipro + "";
+                        //Toast.makeText(getApplicationContext(),Str,Toast.LENGTH_SHORT).show();
+                        db.execSQL(Str);
+                    }
+
+
+                    try {
+                        String equipo= Secure.getString(getApplicationContext().getContentResolver(),Secure.ANDROID_ID);
+                        File salida = new File(Environment.getExternalStorageDirectory().getPath() + File.separator + "/SisMetPrec/Salida/SalInfo_" + equipo + ".txt");
+                        OutputStreamWriter fout=new OutputStreamWriter(new FileOutputStream(salida));
+                        //Inserción de registros nuevos (equipos adicionales)
+                        args = new String[]{"1"};
+                        String  num_bpr,des_bpr,mar_bpr,mod_bpr,capmax_bpr,capuso_bpr,divesc_bpr,unidivesc_bpr,divesc_d_bpr,ran_bpr,
+                                cod_pro,cod_met,ide_bpr,est_bpr,lit_bpr,idecom_bpr,divesccal_bpr,capcal_bpr;
+                        c = db.rawQuery("Select numbpr,desbpr,marbpr,modbpr,capmaxbpr,capusobpr,divescbpr,unidivescbpr,divesc_dbpr,ranBpr, " +
+                                "codpro,codmet,idebpr,estbpr,litbpr,ideComBpr,DivEscCalBpr,CapCalBpr " +
+                                "from Balxpro " +
+                                "where es_adi=?", args);
+                        if (c.moveToFirst()) {
+                            do {
+                                num_bpr=c.getString(0);des_bpr=c.getString(1);mar_bpr=c.getString(2);
+                                mod_bpr=c.getString(3);capmax_bpr=c.getString(4);capuso_bpr=c.getString(5);
+                                divesc_bpr=c.getString(6);unidivesc_bpr=c.getString(7);divesc_d_bpr=c.getString(8);
+                                ran_bpr=c.getString(9); cod_pro=c.getString(10);cod_met=c.getString(11);
+                                ide_bpr=c.getString(12);
+                                est_bpr=c.getString(13);lit_bpr=c.getString(14);idecom_bpr=c.getString(15);
+                                divesccal_bpr=c.getString(16);capcal_bpr=c.getString(17);
+
+                                fout.write("IF NOT EXISTS (SELECT 1 FROM balxpro WHERE idecombpr='" + idecom_bpr + "') BEGIN " +
+                                        "Insert into balxpro (numbpr,desbpr,IdentBpr,marbpr,modbpr,SerBpr," +
+                                    "capmaxbpr,UbiBpr,capusobpr,divescbpr,unidivescbpr,divesc_dbpr,unidivesc_dbpr," +
+                                    "RanBpr,ClaBpr,codpro,codmet,idebpr,estbpr,litbpr,idecombpr,divesccalbpr,capcalbpr" +
+                                    ") values " +
+                                    "(" + num_bpr + ",'" + des_bpr + "','n/a','" + mar_bpr + "','" + mod_bpr + "'," +
+                                    "'n/a'," + capmax_bpr + ",'n/a'," + capuso_bpr + "," + divesc_bpr + ",'" + unidivesc_bpr + "'," +
+                                    "" + divesc_d_bpr + ",'" + unidivesc_bpr + "'," + ran_bpr + ",'n/a'," + cod_pro + "," + cod_met + "," +
+                                    "'" + ide_bpr + "','" + est_bpr + "','" + lit_bpr + "','" + idecom_bpr + "','" + divesccal_bpr +
+                                    "','" + capcal_bpr + "') END;" + "\r\n");
+
+                                //Toast.makeText(getApplicationContext(),idecom_bpr,Toast.LENGTH_SHORT).show();
+                            } while (c.moveToNext());
+                        }
+                        c.close();
+                        //Escritura de la tabla Baxpro y de las tablas dependientes de cada código disponible.
+                        args = new String[]{"I","P","NP"};
+                        String cod, des,ident,mar,mod,ser,capmax,ubi,capuso,divesc,unidivesc,divesc_d,unidivesc_d,ran,
+                               cla,n1,n2,n2a,n5,n10,n20,n20a,n50,n100,n200,n200a,n500,n1000,n2000,n2000a,n5000,n10000,
+                               n20000,n500000,est,recporcli,divesccal,capcal,est_esc,proy,fech,vis1,vis2,vis3,obsvis,idecombpr,
+                               fecha_prx;
+                        c = db.rawQuery("Select DesBpr,IdentBpr,MarBpr,ModBpr,SerBpr,CapMaxBpr,UbiBpr,CapUsoBpr," +
+                                "DivEscBpr,UniDivEscBpr,DivEsc_dBpr,UniDivEsc_dBpr,RanBpr,ClaBpr,N1,N2,N2A,N5,N10," +
+                                "N20,N20A,N50,N100,N200,N200A,N500,N1000,N2000,N2000A,N5000,N10000,N20000,N500000," +
+                                "EstBpr,RecPorCliBpr,DivEscCalBpr,CapCalBpr,est_esc,CodBpr,CodPro,fec_cal,BalLimpBpr," +
+                                "AjuBpr,IRVBpr,ObsVBpr,IdeComBpr,fec_proxBpr " +
+                                "from Balxpro " +
+                                "where EstBpr=? and est_esc=? or est_esc=?", args);
+                        if (c.moveToFirst()) {
+                            do {
+                                des=c.getString(0);ident=c.getString(1);mar=c.getString(2);mod=c.getString(3);
+                                ser=c.getString(4);capmax=c.getString(5);ubi=c.getString(6);capuso=c.getString(7);
+                                divesc=c.getString(8);unidivesc=c.getString(9);divesc_d=c.getString(10);
+                                unidivesc_d=c.getString(11);ran=c.getString(12);cla=c.getString(13);n1=c.getString(14);
+                                n2=c.getString(15);n2a=c.getString(16);n5=c.getString(17);n10=c.getString(18);
+                                n20=c.getString(19);n20a=c.getString(20);n50=c.getString(21);n100=c.getString(22);
+                                n200=c.getString(23);n200a=c.getString(24);n500=c.getString(25);n1000=c.getString(26);
+                                n2000=c.getString(27);n2000a=c.getString(28);n5000=c.getString(29);n10000=c.getString(30);
+                                n20000=c.getString(31);n500000=c.getString(32);est=c.getString(33);recporcli=c.getString(34);
+                                divesccal=c.getString(35);capcal=c.getString(36);est_esc=c.getString(37);
+                                cod=c.getString(38);proy=c.getString(39);fech=c.getString(40);vis1 = c.getString(41);
+                                vis2=c.getString(42);vis3=c.getString(43);obsvis=c.getString(44);idecombpr=c.getString(45);
+                                fecha_prx=c.getString(46);
+
+                                //fout.write("Update Balxpro set CodBpr=" +cod + ",DesBpr='" + des + "',IdentBpr='"+ ident +"',MarBpr='" + mar + "'," +
+                                fout.write("Update Balxpro set DesBpr='" + des + "',IdentBpr='"+ ident +"',MarBpr='" + mar + "'," +
+                                           "ModBpr='" + mod + "',SerBpr='" + ser + "',CapMaxBpr=" + capmax  + ",UbiBpr='" + ubi + "'," +
+                                           "CapUsoBpr=" + capuso + ",DivEscBpr=" + divesc +",UniDivEscBpr='" + unidivesc + "'," +
+                                           "DivEsc_dBpr=" + divesc_d + ",UniDivEsc_dBpr='" + unidivesc_d + "',RanBpr=" + ran + "," +
+                                           "ClaBpr='" + cla + "',N1=" + n1 + ",N2=" + n2 + ",N2A=" + n2a +",N5=" + n5 + "," +
+                                           "N10=" + n10 + ",N20=" + n20 + ",N20A=" + n20a + ",N50=" + n50 + ",N100=" + n100 +"," +
+                                           "N200=" + n200 + ",N200A=" + n200a + ",N500=" + n500 + ",N1000=" + n1000 + "," +
+                                           "N2000=" + n2000 + ",N2000A=" + n2000a + ",N5000=" + n5000 + ",N10000=" + n10000 + "," +
+                                           "N20000=" + n20000 + ",N500000=" + n500000 + ",EstBpr='" + est + "'," +
+                                           "RecPorCliBpr='" + recporcli + "',DivEscCalBpr='" + divesccal + "'," +
+                                           "CapCalBpr='" + capcal + "',est_esc='" + est_esc  + "',fec_cal='" + fech + "'," +
+                                           "BalLimpBpr='" + vis1 + "',AjuBpr='" + vis2 + "',IRVBpr='" + vis3 +
+                                           "',ObsVBpr='" + obsvis + "',fec_proxBpr='" + fecha_prx  + "' " +
+                                           "where IdeComBpr='" + idecombpr + "';" + "\r\n");
+
+                               //Escritura de la tabla Ambientales
+                                String[] args2 = new String[]{idecombpr};
+                                String  CodAmb,TemIni,TemFin,HumRelIni,HumRelFin,idecombpr_a;
+                                Cursor c1 = db.rawQuery("Select * " +
+                                        "from Ambientales " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+                                        CodAmb=c1.getString(0);TemIni=c1.getString(1);TemFin=c1.getString(2);
+                                        HumRelIni=c1.getString(3);HumRelFin=c1.getString(4);idecombpr_a=c1.getString(5);
+
+                                        fout.write("Insert Into Ambientales values(" + CodAmb + "," + TemIni + "," + TemFin + "," +
+                                                   "" + HumRelIni + "," + HumRelFin + ",'" + idecombpr_a  + "');" + "\r\n");
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                                // Escritura de la tabla ExecCam_Cab
+                                args2 = new String[]{idecombpr};
+                                String CodCam_c,CarCam_c,PrbCam_c,SatCam_c,idecombpr_exc;
+                                c1 = db.rawQuery("Select * " +
+                                        "from ExecCam_Cab " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+                                        CodCam_c=c1.getString(0);CarCam_c=c1.getString(1);PrbCam_c=c1.getString(2);
+                                        SatCam_c=c1.getString(3);idecombpr_exc=c1.getString(4);
+
+                                        fout.write("Insert Into ExecCam_Cab values(" + CodCam_c + "," + CarCam_c + "," +
+                                                "" + PrbCam_c + "," +
+                                                "'" + SatCam_c + "','" + idecombpr_exc + "');" + "\r\n");
+                                        // Escritura de la tabla ExecCam_Det (dependiente de ExecCam_Cab)
+                                        String[] args3 = new String[]{CodCam_c};
+                                        String CodCam_d,pos1,pos1r,pos2,pos2r,pos3,pos3r,ExecMax,Emp,CodCam;
+                                        Cursor c2 = db.rawQuery("Select * " +
+                                                "from ExecCam_Det " +
+                                                "where CodCam_c=?",args3);
+                                        if (c2.moveToFirst()){
+                                            do {
+                                                CodCam_d=c2.getString(0);pos1=c2.getString(1);pos1r=c2.getString(2);
+                                                pos2=c2.getString(3);pos2r=c2.getString(4);pos3=c2.getString(5);
+                                                pos3r=c2.getString(6);ExecMax=c2.getString(7);Emp=c2.getString(8);
+                                                CodCam=c2.getString(9);
+
+                                                fout.write("Insert Into ExecCam_Det values (" + CodCam_d + "," + pos1 + "," +
+                                                        "" + pos1r + "," +
+                                                        "" + pos2 + "," + pos2r + "," + pos3 + "," + pos3r + "," + ExecMax + "," +
+                                                        "" + Emp + "," + CodCam + ");" + "\r\n");
+                                            }
+                                            while (c2.moveToNext());
+                                        }
+                                        c2.close();
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                               // Escritura de la tabla ExecII_Cab
+                                args2 = new String[]{idecombpr};
+                                String CodEii_c,CarEii_c,PrbEii_c,SatEii_c,idecombpr_Eii;
+                                c1 = db.rawQuery("Select * " +
+                                        "from ExecII_Cab " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+                                        CodEii_c=c1.getString(0);CarEii_c=c1.getString(1);PrbEii_c=c1.getString(2);
+                                        SatEii_c=c1.getString(4);idecombpr_Eii=c1.getString(3);
+
+                                        fout.write("Insert Into ExecII_Cab values(" + CodEii_c + "," + CarEii_c + "," +
+                                                "" + PrbEii_c + "," +
+                                                "'" + idecombpr_Eii + "','" + SatEii_c + "');" + "\r\n");
+                                        // Escritura de la tabla ExecII_Det (dependiente de ExecII_Cab)
+                                        String[] args3 = new String[]{CodEii_c};
+                                        String CodEii_d,pos1Eii,pos2Eii,pos3Eii,pos4Eii,pos5Eii,ExecMaxEii,EmpEii,CodEii;
+                                        Cursor c2 = db.rawQuery("Select * " +
+                                                "from ExecII_Det " +
+                                                "where CodEii_c=?",args3);
+                                        if (c2.moveToFirst()){
+                                            do {
+                                                CodEii_d=c2.getString(0);pos1Eii=c2.getString(1);pos2Eii=c2.getString(2);
+                                                pos3Eii=c2.getString(3);pos4Eii=c2.getString(4);pos5Eii=c2.getString(5);
+                                                ExecMaxEii=c2.getString(6);EmpEii=c2.getString(7);CodEii=c2.getString(8);
+
+                                                fout.write("Insert Into ExecII_Det values (" + CodEii_d + "," + pos1Eii + "," +
+                                                        "" + pos2Eii + "," +
+                                                        "" + pos3Eii + "," + pos4Eii + "," + pos5Eii + "," + ExecMaxEii + "," +
+                                                        "" + EmpEii + "," + CodEii + ");" + "\r\n");
+                                            }
+                                            while (c2.moveToNext());
+                                        }
+                                        c2.close();
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                                // Escritura de la tabla PCarga_Cab
+                                args2 = new String[]{idecombpr};
+                                String CodPca,CarPca,NumPca,idecombpr_Pca,SatPca;
+                                c1 = db.rawQuery("Select * " +
+                                        "from PCarga_Cab " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+                                        CodPca=c1.getString(0);CarPca=c1.getString(1);NumPca=c1.getString(2);
+                                        idecombpr_Pca=c1.getString(3);SatPca=c1.getString(4);
+
+                                        fout.write("Insert Into PCarga_Cab values(" + CodPca + "," + CarPca + "," +
+                                                "'" + NumPca + "','" + idecombpr_Pca + "','" + SatPca + "');" + "\r\n");
+                                        // Escritura de la tabla PCarga_Det (dependiente de PCarga_Cab)
+                                        String[] args3 = new String[]{CodPca};
+                                        String CodPca_d,LecAsc,LecDsc,ErrAsc,ErrDsc,EmpPca_d,CodPca_c,SatPca_d;
+                                        Cursor c2 = db.rawQuery("Select * " +
+                                                "from PCarga_Det " +
+                                                "where CodPca_C=?",args3);
+                                        if (c2.moveToFirst()){
+                                            do {
+                                                CodPca_d=c2.getString(0);LecAsc=c2.getString(1);LecDsc=c2.getString(2);
+                                                ErrAsc=c2.getString(3);ErrDsc=c2.getString(4);EmpPca_d=c2.getString(5);
+                                                CodPca_c=c2.getString(6);SatPca_d=c2.getString(7);
+
+                                                fout.write("Insert Into PCarga_Det values (" + CodPca_d + "," + LecAsc + "," +
+                                                        "" + LecDsc + "," + ErrAsc + "," + ErrDsc + "," + EmpPca_d + "," +
+                                                        "" + CodPca_c + ",'" + SatPca_d + "');" + "\r\n");
+                                            }
+                                            while (c2.moveToNext());
+                                        }
+                                        c2.close();
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                                //Escritura de la tabla Pesxpro
+                                args2 = new String[]{idecombpr};
+                                String  codpxp,idecombpr_pxp,tippxp,noncerpxp,n1pxp,n2pxp,n2apxp,n5pxp,n10pxp,n20pxp,n20apxp,
+                                        n50pxp,n100pxp,n200pxp,n200apxp,n500pxp,n1000pxp,n2000pxp,n2000apxp,n5000pxp,
+                                        n10000pxp,n20000pxp,n500000pxp,cp1pxp,cp2pxp,cp3pxp,cp4pxp,cp5pxp,cp6pxp,cp7pxp,
+                                        cp8pxp,cp9pxp,cp10pxp,cp11pxp,cp12pxp,ajspxp;
+                                c1 = db.rawQuery("Select * " +
+                                        "from Pesxpro " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+                                        codpxp=c1.getString(0);idecombpr_pxp=c1.getString(1);tippxp=c1.getString(2);
+                                        noncerpxp=c1.getString(3);n1pxp=c1.getString(4);n2pxp=c1.getString(5);
+                                        n2apxp=c1.getString(6);n5pxp=c1.getString(7);n10pxp=c1.getString(8);
+                                        n20pxp=c1.getString(9);n20apxp=c1.getString(10);n50pxp=c1.getString(11);
+                                        n100pxp=c1.getString(12);n200pxp=c1.getString(13);n200apxp=c1.getString(14);
+                                        n500pxp=c1.getString(15);n1000pxp=c1.getString(16);n2000pxp=c1.getString(17);
+                                        n2000apxp=c1.getString(18);n5000pxp=c1.getString(19);n10000pxp=c1.getString(20);
+                                        n20000pxp=c1.getString(21);n500000pxp=c1.getString(22);cp1pxp=c1.getString(23);
+                                        cp2pxp=c1.getString(24);cp3pxp=c1.getString(25);cp4pxp=c1.getString(26);
+                                        cp5pxp=c1.getString(27);cp6pxp=c1.getString(28);cp7pxp=c1.getString(29);
+                                        cp8pxp=c1.getString(30);cp9pxp=c1.getString(31);cp10pxp=c1.getString(32);
+                                        cp11pxp=c1.getString(33);cp12pxp=c1.getString(34);ajspxp=c1.getString(35);
+
+                                        fout.write("Insert Into Pesxpro values(" + codpxp + ",'" + idecombpr_pxp + "','" + tippxp + "','" +
+                                                "" + noncerpxp + "'," + n1pxp + "," + n2pxp  + "," + n2apxp + "," + n5pxp + "," +
+                                                "" + n10pxp + "," + n20pxp + "," + n20apxp + "," + n50pxp + "," + n100pxp + "," +
+                                                "" + n200pxp + "," + n200apxp + "," + n500pxp + "," + n1000pxp + "," + n2000pxp + "," +
+                                                "" + n2000apxp + "," + n5000pxp + "," + n10000pxp + "," + n20000pxp + "," +
+                                                "" + n500000pxp + "," + cp1pxp + "," + cp2pxp + "," + cp3pxp + "," + cp4pxp + "," +
+                                                "" + cp5pxp + "," + cp6pxp + "," + cp7pxp + "," + cp8pxp + "," + cp9pxp + "," + cp10pxp + "," +
+                                                "" + cp11pxp + "," + cp12pxp + "," + ajspxp + ");" + "\r\n");
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                                //Escritura de la tabla Cert_Balxpro
+                                args2 = new String[]{idecombpr};
+                                String  codcbp,nomcer,idecombpr_cbp;
+                                c1 = db.rawQuery("Select * " +
+                                        "from Cert_Balxpro " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+
+                                        codcbp=c1.getString(0);nomcer=c1.getString(1);idecombpr_cbp=c1.getString(2);
+
+                                        fout.write("Insert Into Cert_Balxpro values(" + codcbp + ",'" + nomcer + "'," +
+                                                "'" + idecombpr_cbp + "');" + "\r\n");
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                                // Escritura de la tabla RepetIII_Cab
+                                args2 = new String[]{idecombpr};
+                                String codriii_c,carriii,difmaxriii,empriii,satriii,idecombpr_riii;
+                                c1 = db.rawQuery("Select * " +
+                                        "from RepetIII_Cab " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+                                        codriii_c=c1.getString(0);carriii=c1.getString(1);difmaxriii=c1.getString(2);
+                                        empriii=c1.getString(3);satriii=c1.getString(4);idecombpr_riii=c1.getString(5);
+
+                                        fout.write("Insert Into RepetIII_Cab values(" + codriii_c + "," + carriii + "," +
+                                                "'" + difmaxriii + "'," + empriii + ",'" + satriii + "','" + idecombpr_riii + "'" +
+                                                ");" + "\r\n");
+                                        // Escritura de la tabla RepetIII_Det (dependiente de RepetIII_Cab)
+                                        String[] args3 = new String[]{codriii_c};
+                                        String codriii_d,lec1riii,lec1_0riii,lec2riii,lec2_0riii,lec3riii,
+                                               lec3_0riii,codriii_ca;
+                                        Cursor c2 = db.rawQuery("Select * " +
+                                                "from RepetIII_Det " +
+                                                "where CodRiii_C=?",args3);
+                                        if (c2.moveToFirst()){
+                                            do {
+                                                codriii_d=c2.getString(0);lec1riii=c2.getString(1);lec1_0riii=c2.getString(2);
+                                                lec2riii=c2.getString(3);lec2_0riii=c2.getString(4);lec3riii=c2.getString(5);
+                                                lec3_0riii=c2.getString(6);codriii_ca=c2.getString(7);
+
+                                                fout.write("Insert Into RepetIII_Det values (" + codriii_d + "," + lec1riii + "," +
+                                                        "" + lec1_0riii + "," + lec2riii + "," + lec2_0riii + "," + lec3riii + "," +
+                                                        "" + lec3_0riii + "," + codriii_ca + ");" + "\r\n");
+                                            }
+                                            while (c2.moveToNext());
+                                        }
+                                        c2.close();
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+
+                                // Escritura de la tabla RepetII_Cab
+                                args2 = new String[]{idecombpr};
+                                String codrii_c,carrii,difmaxrii,emprii,satrii,idecombpr_rii;
+                                c1 = db.rawQuery("Select * " +
+                                        "from RepetII_Cab " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+                                        codrii_c=c1.getString(0);carrii=c1.getString(1);difmaxrii=c1.getString(2);
+                                        emprii=c1.getString(3);satrii=c1.getString(4);idecombpr_rii=c1.getString(5);
+
+                                        fout.write("Insert Into RepetII_Cab values(" + codrii_c + "," + carrii + "," +
+                                                "'" + difmaxrii + "'," + emprii + ",'" + satrii + "','" + idecombpr_rii + "'" +
+                                                ");" + "\r\n");
+                                        // Escritura de la tabla RepetII_Det (dependiente de RepetII_Cab)
+                                        String[] args3 = new String[]{codrii_c};
+                                        String codrii_d,lec1rii,lec1_0rii,lec2rii,lec2_0rii,lec3rii,lec3_0rii,lec4rii,lec4_0rii,
+                                               lec5rii,lec5_0rii,lec6rii,lec6_0rii,codrii_ca;
+                                        Cursor c2 = db.rawQuery("Select * " +
+                                                "from RepetII_Det " +
+                                                "where CodRii_C=?",args3);
+                                        if (c2.moveToFirst()){
+                                            do {
+                                                codrii_d=c2.getString(0);lec1rii=c2.getString(1);lec1_0rii=c2.getString(2);
+                                                lec2rii=c2.getString(3);lec2_0rii=c2.getString(4);lec3rii=c2.getString(5);
+                                                lec3_0rii=c2.getString(6);lec4rii=c2.getString(7);lec4_0rii=c2.getString(8);
+                                                lec5rii=c2.getString(9);lec5_0rii=c2.getString(10);lec6rii=c2.getString(11);
+                                                lec6_0rii=c2.getString(12);codrii_ca=c2.getString(13);
+
+                                                fout.write("Insert Into RepetII_Det values (" + codrii_d + "," + lec1rii + "," +
+                                                        "" + lec1_0rii + "," + lec2rii + "," + lec2_0rii + "," + lec3rii + "," +
+                                                        "" + lec3_0rii + "," + lec4rii + "," + lec4_0rii + "," + lec5rii + "," +
+                                                        "" + lec5_0rii + "," + lec6rii + "," + lec6_0rii + "," + codrii_ca +
+                                                        ");" + "\r\n");
+                                            }
+                                            while (c2.moveToNext());
+                                        }
+                                        c2.close();
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                                //Escritura de la tabla Sustxpro
+                                args2 = new String[]{idecombpr};
+                                String  codsxp,idecombpr_sxp,tipsxp,crgsxp1,crgsxp2,crgsxp3,crgsxp4,crgsxp5,crgsxp6,crgsxp7,crgsxp8,
+                                        crgsxp9,crgsxp10,pesxpro_aso;
+                                c1 = db.rawQuery("Select * " +
+                                        "from Sustxpro " +
+                                        "where IdeComBpr=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+
+                                        codsxp=c1.getString(0);idecombpr_sxp=c1.getString(1);tipsxp=c1.getString(2);
+                                        crgsxp1=c1.getString(3);crgsxp2=c1.getString(4);crgsxp3=c1.getString(5);
+                                        crgsxp4=c1.getString(6);crgsxp5=c1.getString(7);crgsxp6=c1.getString(8);
+                                        crgsxp7=c1.getString(9);crgsxp8=c1.getString(10);crgsxp9=c1.getString(11);
+                                        crgsxp10=c1.getString(12);pesxpro_aso=c1.getString(13);
+
+                                        fout.write("Insert Into Sustxpro values(" + codsxp + ",'" + idecombpr_sxp + "','" +
+                                                "" + tipsxp + "'," + crgsxp1 + "," + crgsxp2 + "," + crgsxp3 + "," + crgsxp4 + "," +
+                                                "" + crgsxp5 + "," + crgsxp6 + "," + crgsxp7 + "," + crgsxp8 + "," + crgsxp9 + "," +
+                                                "" + crgsxp10 + "," + pesxpro_aso + ");" + "\r\n");
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+
+                                //Actualización de la tabla Proyectos
+                                args2 = new String[]{proy};
+                                String  estpry,fecprox;
+                                c1 = db.rawQuery("Select EstPro,FecSigCalPro " +
+                                        "from Proyectos " +
+                                        "where CodPro=?", args2);
+                                if (c1.moveToFirst()) {
+                                    do {
+
+                                        estpry=c1.getString(0);fecprox=c1.getString(1);
+
+                                        fout.write("Update Proyectos set EstPro='" + estpry + "',FecSigCalPro='" + fecprox + "'" +
+                                                " where CodPro=" + proy + ";" + "\r\n");
+
+                                    } while (c1.moveToNext());
+                                }
+                                c1.close();
+
+                            } while (c.moveToNext());
+                        }
+                        c.close();
+                        fout.close();
+                    }catch (Exception ex) {
+                        Toast.makeText(getApplicationContext(), "Proceso de escritura fallido. " +
+                                "Por favor intente nuevamente." , Toast.LENGTH_SHORT).show();
+                    }
+
+                    //cy1.cl_ambientales_fin.finish();
+
+                    Intent selproyecto = new Intent(Evaluacion_previa.this,Selec_Proyecto.class);
+                    selproyecto.putExtra("codmetro",cod_metrologo);
+                    startActivity(selproyecto);
+                    finish();
+                }
+            });
+
+        }
+    }
+}

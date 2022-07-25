@@ -1,0 +1,55 @@
+Private Function formateo(ByVal numero As String, ByVal tipo As Integer) As String
+        Dim pos As Integer = 0
+        Dim decs As String = ""
+        Dim posiciones As Integer = 0
+        Dim pra_cal As Integer = 0
+        Dim salida1 As String = ""
+        Dim salida2 As String = ""
+        Dim salida3 As String = ""
+        If ((divCalculo < 1) And (divCalculo > 0)) Then
+            pos = InStr(Str(divCalculo), ".")
+            decs = Mid(Str(divCalculo), pos + 1)
+            posiciones = Len(decs)
+        Else
+            posiciones = 0
+        End If
+
+        salida1 = Replace(FormatNumber(numero, posiciones), ",", ".")
+        salida2 = Replace(FormatNumber(numero, posiciones + 2), ",", ".")
+        salida3 = Replace(FormatNumber(numero, posiciones + 4), ",", ".")
+
+        If tipo = 1 Then
+            Return salida1
+        ElseIf tipo = 2 Then
+            Return salida2
+        Else
+            Return salida3
+        End If
+
+    End Function
+    Private Function emp(ByVal carga As String) As String
+        Dim emp_sal As String
+        Dim crg_st = Replace(carga, ",", "")
+        Dim crg As Double = Val(crg_st)
+        Dim div1 As Double = Val(Replace(lbl_1e, ",", ""))
+        Dim div2 As Double = Val(Replace(lbl_2e, ",", ""))
+        Dim div3 As Double = Val(Replace(lbl_3e, ",", ""))
+
+        If crg <= div1 Then
+            emp_sal = formateo((divCalculo * 1), 2)
+        ElseIf crg <= div2 Then
+            emp_sal = formateo((divCalculo * 2), 2)
+        Else
+            emp_sal = formateo((divCalculo * 3), 2)
+        End If
+        emp = emp_sal
+    End Function
+    Private Function satisface(ByVal eval1 As String, ByVal eval2 As String) As String
+        Dim ev1 As Double = Val(eval1)
+        Dim ev2 As Double = Val(eval2)
+        If ev1 <= ev2 Then
+            satisface = "SATISFACTORIA"
+        Else
+            satisface = "NO SATISFACTORIA"
+        End If
+    End Function

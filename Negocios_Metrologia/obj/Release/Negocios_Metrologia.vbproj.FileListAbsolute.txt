@@ -1,0 +1,97 @@
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.Resources.resources
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.GenerateResource.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CoreCompileInputs.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CopyComplete
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb
+C:\proyecto\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.dll
+C:\proyecto\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.pdb
+C:\proyecto\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.xml
+C:\proyecto\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\proyecto\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\proyecto\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbprojAssemblyReference.cache
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.Resources.resources
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.GenerateResource.cache
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CoreCompileInputs.cache
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CopyComplete
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
+C:\proyecto\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbprojAssemblyReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.Resources.resources
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.GenerateResource.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CopyComplete
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\EPPlus.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\EPPlus.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbprojAssemblyReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.ResolveComReference.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.Resources.resources
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.GenerateResource.cache
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CopyComplete
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
+C:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.pdb
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\EPPlus.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.pdb
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\EPPlus.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbprojAssemblyReference.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.ResolveComReference.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.Resources.resources
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.GenerateResource.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CoreCompileInputs.cache
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CopyComplete
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
+D:\Users\SISTEMAS PRECITROL\Desktop\Proyectos Precitrol\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.dll
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.pdb
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\Negocios_Metrologia.xml
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\EPPlus.dll
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.dll
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\EPPlus.xml
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.xml
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.AssemblyReference.cache
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.ResolveComReference.cache
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.Resources.resources
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.GenerateResource.cache
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CoreCompileInputs.cache
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CopyComplete
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
+C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb

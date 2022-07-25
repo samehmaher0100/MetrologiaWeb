@@ -1,0 +1,4 @@
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Presentacion_Metrologia\obj\Debug\Presentacion_Metrologia.vbprojResolveAssemblyReference.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Presentacion_Metrologia\obj\Debug\Presentacion_Metrologia.Resources.resources
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Presentacion_Metrologia\obj\Debug\Presentacion_Metrologia.vbproj.GenerateResource.cache
+C:\Users\Sistemas\Desktop\Proyectos Precitrol\Sistema Metrologia\VbNetAspProjects\Metrologia\Presentacion_Metrologia\obj\Debug\Presentacion_Metrologia.vbproj.CoreCompileInputs.cache
