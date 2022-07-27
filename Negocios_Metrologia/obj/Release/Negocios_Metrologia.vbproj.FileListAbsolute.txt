@@ -95,3 +95,22 @@ C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negoci
 C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
 C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
 C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\Negocios_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\Negocios_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\Negocios_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\Datos_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\EPPlus.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\Datos_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\Datos_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\EPPlus.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Release\GemBox.Spreadsheet.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.AssemblyReference.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.ResolveComReference.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.Resources.resources
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.GenerateResource.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CoreCompileInputs.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.vbproj.CopyComplete
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Release\Negocios_Metrologia.pdb

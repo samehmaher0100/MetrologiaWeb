@@ -12,16 +12,16 @@ Option Explicit On
 
 
 Partial Public Class pgExplorador
-    
+
     '''<summary>
-    '''Control DropDownList3.
+    '''Control DropDownListYear.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents DropDownList3 As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents DropDownListYear As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
     '''Control Label2.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class pgExplorador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control DropDownList4.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class pgExplorador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList4 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control Label3.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class pgExplorador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control DropDownList5.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class pgExplorador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList5 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control Label4.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class pgExplorador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control DropDownList6.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class pgExplorador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DropDownList6 As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''Control Label5.
     '''</summary>
@@ -84,22 +84,22 @@ Partial Public Class pgExplorador
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
-    '''Control Button1.
+    '''Control ButtonSee.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
-    
+    Protected WithEvents ButtonSee As Global.System.Web.UI.WebControls.Button
+
     '''<summary>
-    '''Control Button2.
+    '''Control ButtonDownload.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents ButtonDownload As Global.System.Web.UI.WebControls.Button
 End Class

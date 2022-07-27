@@ -8,42 +8,40 @@ Imports System.Net
 
 Public Class pgExplorador
     Inherits System.Web.UI.Page
-    'Public ReadOnly Property Elpdf() As String
-    '    Get
-    '        Return TextBox1.Text
-    '    End Get
-    'End Property
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
         'If Session("Nivel") = "2" Then
         '    Response.Write("<script>window.alert('No tiene los suficientes privilegios para acceder a la pagina');</script>" + "<script>window.setTimeout(location.href='/default.aspx', 2000);</script>")
         '    'Response.Redirect("~/Default.aspx", False)
         'End If
+        Dim ruta As String
+        'ruta = "C:\archivos_metrologia\Informes\Version11"
+        ruta = "C:\archivos_metrologia\InformV2"
+
+        '############-----------------  LISTA PARA SELECCIONAR EL AÑO DE BUSQUEDA DEL SERTIFICADO -----------------------------###########
         If Not IsPostBack Then
             'If (Session("Nivel") = "1") Then
             Dim carpetas As String()
-                Dim carpeta As String
-                DropDownList3.AutoPostBack = True
-                Button1.Enabled = False
-                Button2.Enabled = False
-                If Not IsPostBack Then
-                    DropDownList3.Items.Clear()
-                    carpetas = Directory.GetDirectories("C:\archivos_metrologia\Informes")
-                    For Each carpeta In carpetas
-                        DropDownList3.Items.Add(Mid(carpeta, Len(carpeta) - 3))
-                    Next
-                    DropDownList3.Items.Insert(0, New System.Web.UI.WebControls.ListItem("Seleccione..."))
-                End If
-
-
-                'Else
-                '    Response.Write("<script>window.alert('No tiene los suficientes privilegios para acceder a la pagina');</script>" + "<script>window.setTimeout(location.href='/default.aspx', 2000);</script>")
-                'End If
+            Dim carpeta As String
+            DropDownListYear.AutoPostBack = True
+            ButtonSee.Enabled = False
+            ButtonDownload.Enabled = False
+            If Not IsPostBack Then
+                DropDownListYear.Items.Clear()
+                'Esta direccion funciona para ver las carpetas de los diferentes años en Informes v2
+                carpetas = Directory.GetDirectories(ruta)
+                For Each carpeta In carpetas
+                    DropDownListYear.Items.Add(Mid(carpeta, Len(carpeta) - 3))
+                Next
+                DropDownListYear.Items.Insert(0, New System.Web.UI.WebControls.ListItem("Seleccione..."))
             End If
+            'Else
+            '    Response.Write("<script>window.alert('No tiene los suficientes privilegios para acceder a la pagina');</script>" + "<script>window.setTimeout(location.href='/default.aspx', 2000);</script>")
+            'End If
+        End If
 
     End Sub
 
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonSee.Click
         Dim FilePath As String = Label5.Text
         Dim envia As String = Replace(FilePath, "\", "\\")
         '  Response.Write("<script>window.open('PgMuestraPdf.aspx?envia=" + envia + "','popup','width=800,height=500') </script>")
@@ -52,7 +50,7 @@ Public Class pgExplorador
         ScriptManager.RegisterStartupScript(Me, Me.GetType(), "popup", vtn, True)
 
     End Sub
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles ButtonDownload.Click
         Dim FilePath As String = Label5.Text
         Dim nombre As String = ""
         Dim pos As Integer = 0
@@ -73,26 +71,26 @@ Public Class pgExplorador
     End Sub
     Protected Sub DropDownList6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList6.SelectedIndexChanged
         If DropDownList6.SelectedValue = "Seleccione..." Then
-            Button1.Enabled = False
-            Button2.Enabled = False
+            ButtonSee.Enabled = False
+            ButtonDownload.Enabled = False
         Else
-            Button1.Enabled = True
-            Button2.Enabled = True
-            Label5.Text = "C:\archivos_metrologia\Informes\" & Label2.Text & "\" & Label3.Text & "\" & Label4.Text & "\" & DropDownList6.SelectedValue.ToString
+            ButtonSee.Enabled = True
+            ButtonDownload.Enabled = True
+            Label5.Text = "C:\archivos_metrologia\InformV2\" & LabelYear.Text & "\" & LabelMount.Text & "\" & Label4.Text & "\" & DropDownList6.SelectedValue.ToString
         End If
     End Sub
 
-    Protected Sub DropDownList4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList4.SelectedIndexChanged
+    Protected Sub DropDownList4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownListMount.SelectedIndexChanged
         Dim carpetas As String()
         Dim carpeta As String
         Dim pos As Integer = 0
-        Button1.Enabled = False
-        Button2.Enabled = False
+        ButtonSee.Enabled = False
+        ButtonDownload.Enabled = False
         DropDownList5.AutoPostBack = True
         DropDownList5.Items.Clear()
         DropDownList6.Items.Clear()
-        Label3.Text = DropDownList4.SelectedValue.ToString
-        carpetas = Directory.GetDirectories("C:\archivos_metrologia\Informes\" & Label2.Text & "\" & Label3.Text & "")
+        LabelMount.Text = DropDownListMount.SelectedValue.ToString
+        carpetas = Directory.GetDirectories("C:\archivos_metrologia\InformV2\" & LabelYear.Text & "\" & LabelMount.Text & "")
         For Each carpeta In carpetas
             Dim es_carpeta As String = Mid(carpeta, 38)
             pos = InStr(es_carpeta, "\")
@@ -102,21 +100,21 @@ Public Class pgExplorador
         DropDownList5.Items.Insert(0, New System.Web.UI.WebControls.ListItem("Seleccione..."))
     End Sub
 
-    Protected Sub DropDownList3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList3.SelectedIndexChanged
+    Protected Sub DropDownList3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownListYear.SelectedIndexChanged
         Dim carpetas As String()
         Dim carpeta As String
-        DropDownList4.AutoPostBack = True
-        Button1.Enabled = False
-        Button2.Enabled = False
-        DropDownList4.Items.Clear()
+        DropDownListMount.AutoPostBack = True
+        ButtonSee.Enabled = False
+        ButtonDownload.Enabled = False
+        DropDownListMount.Items.Clear()
         DropDownList5.Items.Clear()
         DropDownList6.Items.Clear()
-        carpetas = Directory.GetDirectories("C:\archivos_metrologia\Informes\" & DropDownList3.SelectedValue.ToString & "")
-        Label2.Text = DropDownList3.SelectedValue.ToString
+        carpetas = Directory.GetDirectories("C:\archivos_metrologia\InformV2\" & DropDownListYear.SelectedValue.ToString & "")
+        LabelYear.Text = DropDownListYear.SelectedValue.ToString
         For Each carpeta In carpetas
-            DropDownList4.Items.Add(Mid(carpeta, 38))
+            DropDownListMount.Items.Add(Mid(carpeta, 38))
         Next
-        DropDownList4.Items.Insert(0, New System.Web.UI.WebControls.ListItem("Seleccione..."))
+        DropDownListMount.Items.Insert(0, New System.Web.UI.WebControls.ListItem("Seleccione..."))
     End Sub
 
     Protected Sub DropDownList5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DropDownList5.SelectedIndexChanged
@@ -126,7 +124,7 @@ Public Class pgExplorador
         DropDownList6.AutoPostBack = True
         DropDownList6.Items.Clear()
         Label4.Text = DropDownList5.SelectedValue.ToString
-        Dim path_elegido As String = "C:\archivos_metrologia\Informes\" & Label2.Text & "\" & Label3.Text & "\" & Label4.Text
+        Dim path_elegido As String = "C:\archivos_metrologia\InformV2\" & LabelYear.Text & "\" & LabelMount.Text & "\" & Label4.Text
         archivos = Directory.GetFiles(path_elegido, "*.pdf")
         'archivos = Directory.GetFiles("C:\archivos_metrologia\Informes\ICC170901", "*.pdf")
         For Each archivo In archivos

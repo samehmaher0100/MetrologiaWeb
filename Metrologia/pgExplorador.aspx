@@ -5,17 +5,17 @@
     <tr>
         <td style="width: 185px; height: 50px;">Seleccione el Año:</td>
         <td style="height: 50px">
-            <asp:DropDownList ID="DropDownList3" runat="server" Height="35px" Width="200px">
+            <asp:DropDownList ID="DropDownListYear" runat="server" Height="35px" Width="200px">
             </asp:DropDownList>
-            <asp:Label ID="Label2" runat="server" Text="Label" Visible="False"></asp:Label>
+            <asp:Label ID="LabelYear" runat="server" Text="Label" Visible="False"></asp:Label>
         </td>
     </tr>
     <tr>
         <td style="width: 185px; height: 51px;">Seleccione el mes:</td>
         <td style="height: 51px">
-            <asp:DropDownList ID="DropDownList4" runat="server" Height="35px" Width="200px">
+            <asp:DropDownList ID="DropDownListMount" runat="server" Height="35px" Width="200px">
             </asp:DropDownList>
-            <asp:Label ID="Label3" runat="server" Text="Label" Visible="False"></asp:Label>
+            <asp:Label ID="LabelMount" runat="server" Text="Label" Visible="False"></asp:Label>
         </td>
     </tr>
     <tr>
@@ -37,9 +37,9 @@
     <tr>
         <td style="width: 185px; height: 50px;"></td>
         <td style="height: 50px">
-            <asp:Button ID="Button1" runat="server" Text="Mostrar" />
+            <asp:Button ID="ButtonSee" runat="server" Text="Mostrar" />
 
-            <asp:Button ID="Button2" runat="server" Text="Descargar" Visible ="false"  />
+            <asp:Button ID="ButtonDownload" runat="server" Text="Descargar" Visible ="false"  />
         </td>
     </tr>
 </table>

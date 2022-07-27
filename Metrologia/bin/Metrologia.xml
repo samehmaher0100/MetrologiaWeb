@@ -2915,9 +2915,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Metrologia.pgExplorador._DropDownList3">
+<member name="F:Metrologia.pgExplorador._DropDownListYear">
 <summary>
-Control DropDownList3.
+Control DropDownListYear.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -2987,18 +2987,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Metrologia.pgExplorador._Button1">
+<member name="F:Metrologia.pgExplorador._ButtonSee">
 <summary>
-Control Button1.
+Control ButtonSee.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:Metrologia.pgExplorador._Button2">
+<member name="F:Metrologia.pgExplorador._ButtonDownload">
 <summary>
-Control Button2.
+Control ButtonDownload.
 </summary>
 <remarks>
 Campo generado automáticamente.
