@@ -75,11 +75,9 @@
                         <div class="modal-header">
                             <%--        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>--%>
                             <h4 class="modal-title">
-
                                 <asp:Label ID="Lbl_Codigo" class="text-primary"  runat="server" Text="Label"></asp:Label>
-                                |
-
-                                <asp:Label ID="lblModalTitle" runat="server" Text=""></asp:Label></h4>
+                                <asp:Label ID="lblModalTitle" runat="server" Text=""></asp:Label>
+                            </h4>
                         </div>
                         <div class="modal-body">
                             <div class="container">

@@ -109,3 +109,22 @@ C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Debug\Negocios
 C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.dll
 C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.xml
 C:\archivos_metrologia\Web V12\Metrologia\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\Negocios_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\Negocios_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\Negocios_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\Datos_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\EPPlus.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\GemBox.Spreadsheet.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\Datos_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\Datos_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\EPPlus.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\bin\Debug\GemBox.Spreadsheet.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.vbproj.AssemblyReference.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.vbproj.ResolveComReference.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.Resources.resources
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.vbproj.GenerateResource.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.vbproj.CoreCompileInputs.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.vbproj.CopyComplete
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Negocios_Metrologia\obj\Debug\Negocios_Metrologia.pdb

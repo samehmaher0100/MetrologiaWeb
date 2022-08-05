@@ -229,3 +229,42 @@ C:\archivos_metrologia\Web V12\Metrologia\Metrologia\obj\Release\Metrologia.vbpr
 C:\archivos_metrologia\Web V12\Metrologia\Metrologia\obj\Release\Metrologia.dll
 C:\archivos_metrologia\Web V12\Metrologia\Metrologia\obj\Release\Metrologia.xml
 C:\archivos_metrologia\Web V12\Metrologia\Metrologia\obj\Release\Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Metrologia.dll.config
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\BouncyCastle.Crypto.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Common.Logging.Core.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Common.Logging.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\jabber-net.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\MathNet.Numerics.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Negocios_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\netlib.Dns.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\OC.Core.Crypto.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\OC.Core.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Select.HtmlToPdf.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Datos_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Negocios_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Negocios_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\BouncyCastle.Crypto.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Common.Logging.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Common.Logging.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Common.Logging.Core.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Common.Logging.Core.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\MathNet.Numerics.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\OC.Core.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\OC.Core.Crypto.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Select.HtmlToPdf.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Datos_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Datos_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\bin\Select.Html.dep
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.vbproj.AssemblyReference.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.vbproj.ResolveComReference.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.Resources.resources
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.vbproj.GenerateResource.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.dll.licenses
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.vbproj.CoreCompileInputs.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.vbproj.CopyComplete
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Metrologia\obj\Release\Metrologia.pdb

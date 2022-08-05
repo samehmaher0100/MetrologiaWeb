@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="footer">
-                            Version 1.2.0 --- 07/07/2022
+                            Version 1.2.1 --- 05/08/2022
                             <br />
                             Copyright &copy; Precitrol 2019
                             <br />

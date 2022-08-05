@@ -77,3 +77,16 @@ C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Debug\Datos_Metro
 C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Debug\Datos_Metrologia.xml
 C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Debug\Datos_Metrologia.pdb
 C:\archivos_metrologia\Web V12\Metrologia\Datos_Metrologia\obj\Debug\Datos_Metrologia.vbproj.AssemblyReference.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\bin\Debug\Datos_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\bin\Debug\Datos_Metrologia.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\bin\Debug\Datos_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\bin\Debug\nunit.framework.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\bin\Debug\nunit.framework.pdb
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\bin\Debug\nunit.framework.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\obj\Debug\Datos_Metrologia.Resources.resources
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\obj\Debug\Datos_Metrologia.vbproj.GenerateResource.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\obj\Debug\Datos_Metrologia.vbproj.CoreCompileInputs.cache
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\obj\Debug\Datos_Metrologia.vbproj.CopyComplete
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\obj\Debug\Datos_Metrologia.dll
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\obj\Debug\Datos_Metrologia.xml
+C:\archivos_metrologia\MetrologiaWeb\Metrologia_V12\Datos_Metrologia\obj\Debug\Datos_Metrologia.pdb
