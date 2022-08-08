@@ -96,16 +96,16 @@
                 <div class="row">
 
                     <div class="col">
-                        <asp:TextBox ID="Txt_CapacidadM" type="number" step="0.00000001" Enabled ="false" required="required" placeholder="Capacidad Máxima" Class="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="Txt_CapacidadM" type="number" step="0.00001" Enabled ="false" required="required" placeholder="Capacidad Máxima" Class="form-control" runat="server"></asp:TextBox>
 
                     </div>
 
                     <div class="col">
-                        <asp:TextBox ID="Txt_Resolucion" type="number" step="0.01" Enabled ="false" required="required" placeholder="Resolución del Equipo o división de escala" Class="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="Txt_Resolucion" type="number" step="0.00001" Enabled ="false" required="required" placeholder="Resolución del Equipo o división de escala" Class="form-control" runat="server"></asp:TextBox>
 
                     </div>
                     <div class="col">
-                        <asp:TextBox ID="Txt_CapacidadU" type="number" step="1" Enabled ="false" required="required" placeholder="Capacidad de Uso" Class="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="Txt_CapacidadU" type="number" step="0.00001" Enabled ="false" required="required" placeholder="Capacidad de Uso" Class="form-control" runat="server"></asp:TextBox>
 
                     </div>
                 </div>

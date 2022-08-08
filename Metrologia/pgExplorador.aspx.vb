@@ -28,8 +28,8 @@ Public Class pgExplorador
                 Button2.Enabled = False
                 If Not IsPostBack Then
                     DropDownList3.Items.Clear()
-                    carpetas = Directory.GetDirectories("C:\archivos_metrologia\Informes")
-                    For Each carpeta In carpetas
+                carpetas = Directory.GetDirectories("C:\archivos_metrologia\InformV2")
+                For Each carpeta In carpetas
                         DropDownList3.Items.Add(Mid(carpeta, Len(carpeta) - 3))
                     Next
                     DropDownList3.Items.Insert(0, New System.Web.UI.WebControls.ListItem("Seleccione..."))
@@ -78,7 +78,7 @@ Public Class pgExplorador
         Else
             Button1.Enabled = True
             Button2.Enabled = True
-            Label5.Text = "C:\archivos_metrologia\Informes\" & Label2.Text & "\" & Label3.Text & "\" & Label4.Text & "\" & DropDownList6.SelectedValue.ToString
+            Label5.Text = "C:\archivos_metrologia\InformV2\" & Label2.Text & "\" & Label3.Text & "\" & Label4.Text & "\" & DropDownList6.SelectedValue.ToString
         End If
     End Sub
 
@@ -92,7 +92,7 @@ Public Class pgExplorador
         DropDownList5.Items.Clear()
         DropDownList6.Items.Clear()
         Label3.Text = DropDownList4.SelectedValue.ToString
-        carpetas = Directory.GetDirectories("C:\archivos_metrologia\Informes\" & Label2.Text & "\" & Label3.Text & "")
+        carpetas = Directory.GetDirectories("C:\archivos_metrologia\InformV2\" & Label2.Text & "\" & Label3.Text & "")
         For Each carpeta In carpetas
             Dim es_carpeta As String = Mid(carpeta, 38)
             pos = InStr(es_carpeta, "\")
@@ -111,7 +111,7 @@ Public Class pgExplorador
         DropDownList4.Items.Clear()
         DropDownList5.Items.Clear()
         DropDownList6.Items.Clear()
-        carpetas = Directory.GetDirectories("C:\archivos_metrologia\Informes\" & DropDownList3.SelectedValue.ToString & "")
+        carpetas = Directory.GetDirectories("C:\archivos_metrologia\InformV2\" & DropDownList3.SelectedValue.ToString & "")
         Label2.Text = DropDownList3.SelectedValue.ToString
         For Each carpeta In carpetas
             DropDownList4.Items.Add(Mid(carpeta, 38))
@@ -126,7 +126,7 @@ Public Class pgExplorador
         DropDownList6.AutoPostBack = True
         DropDownList6.Items.Clear()
         Label4.Text = DropDownList5.SelectedValue.ToString
-        Dim path_elegido As String = "C:\archivos_metrologia\Informes\" & Label2.Text & "\" & Label3.Text & "\" & Label4.Text
+        Dim path_elegido As String = "C:\archivos_metrologia\InformV2\" & Label2.Text & "\" & Label3.Text & "\" & Label4.Text
         archivos = Directory.GetFiles(path_elegido, "*.pdf")
         'archivos = Directory.GetFiles("C:\archivos_metrologia\Informes\ICC170901", "*.pdf")
         For Each archivo In archivos
